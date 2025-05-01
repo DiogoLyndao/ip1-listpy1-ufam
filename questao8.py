@@ -13,7 +13,7 @@ if type == 1:
 	# Condições do tempo de ligação
 	if time <= 3:
 		 print("O valor a ser pago é de: R$0.50")
-    else:   
+	else:   
 		adtime = time - 3
 		print("O valor a ser pago é de: R$",(adtime * 0.10)+0.50)
 
