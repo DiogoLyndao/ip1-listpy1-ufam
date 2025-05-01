@@ -7,15 +7,18 @@ print("3 - Internacional")
 type = int(input("Digite o tipo da ligação: "))
 
 adtime = 0
+pay = 0
 
 if type == 1:
 	print("=========== Local =============")
-	# Condições do tempo de ligação
+	# Condiões do tempo de ligação
 	if time <= 3:
-		 print("O valor a ser pago é de: R$0.50")
-    else:   
+		print("O valor a ser pago é de: R$0.50")
+	else:
 		adtime = time - 3
-		print("O valor a ser pago é de: R$",(adtime * 0.10)+0.50)
+		pay = (adtime * 0.10)+0.50
+		print(f"O valor a ser pago é de: R${pay:.2f}")
+
 
 if type == 2:
 	print("========= Nacional ===========")
@@ -24,7 +27,8 @@ if type == 2:
 		print("O valor a ser pago é de: R$1.00")
 	else: 
 		adtime = time - 3
-		print("O valor a ser pago é de: R$",(adtime * 0.25)+1.00)
+		pay = (adtime * 0.25)+1.00
+		print(f"O valor a ser pago é de: R${pay:.2f}")
 
 if type == 3:
 	print("======== Internacional =========")
@@ -33,5 +37,6 @@ if type == 3:
 		print("O valor a ser pago é de: R$2.00")
 	else:
 		adtime = time - 3
-		print("O valor a ser pago é de: R$", (adtime * 0.60)+2.00)
+		pay =  (adtime * 0.60)+2.00
+		print(f"O valor a ser pago é de: R${pay:.2f}")
 	
