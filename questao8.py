@@ -13,13 +13,8 @@ if type == 1:
 	print("=========== Local =============")
 	# Condiões do tempo de ligação
 	if time <= 3:
-<<<<<<< HEAD
 		print("O valor a ser pago é de: R$0.50")
 	else:
-=======
-		 print("O valor a ser pago é de: R$0.50")
-	else:   
->>>>>>> ddf12d49c390f73d491304363908fdde37c79319
 		adtime = time - 3
 		pay = (adtime * 0.10)+0.50
 		print(f"O valor a ser pago é de: R${pay:.2f}")
@@ -42,11 +37,7 @@ if type == 3:
 		print("O valor a ser pago é de: R$2.00")
 	else:
 		adtime = time - 3
-<<<<<<< HEAD
 		pay =  (adtime * 0.60)+2.00
 		print(f"O valor a ser pago é de: R${pay:.2f}")
+		
 	
-=======
-		print("O valor a ser pago é de: R$", (adtime * 0.60)+2.00)
-	
->>>>>>> ddf12d49c390f73d491304363908fdde37c79319
